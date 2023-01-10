@@ -6,4 +6,11 @@ def main(s):
     Returns:
         int: return answer
     """
-    return
+    idx = 0
+    count = 0
+    while idx < len(s):
+        if s[idx].isdigit() and int(s[idx])%2==1:
+            count += int(s[idx]) 
+        idx += 1 
+    return count
+print(main('589765'))
